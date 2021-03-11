@@ -2,10 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    font-family: 'Roboto', sans-serif;
+    outline: none;
 
-body {
-    
 }
 
 .gradient{
@@ -27,26 +26,122 @@ body {
         background-position: 100% 50%;
     }
     100% {
-        background-position: 0% 50
+        background-position: 0% 50%
     }
 }
 
-#principal {
-    display: flex;
+.centro{
+    display: flex; 
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
+}
+
+#principal {
     background-color: white;
-    width: 500px;
-    height: 500px;
+    width: 60%;
+    /* height: 60%; */
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.76);
 }
 
-.titulo{
-    width: 500px;
-    /* align-self: flex-start;
-    flex-grow: 1; */
+#titulo{
+    /* display: inline-block; */
+    width: 100%;
+    /* background-color: cadetblue; */
+    margin-top: 20px;
+    padding:10px
 }
+
+#titulo h1{
+    padding: 5px;
+    font-size: 1.8rem;
+}
+
+#titulo p{
+    padding: 5px;
+    font-size: 1.0rem;
+}
+
+#apelido{
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    color: #757575;
+    background-color: #f0f0f098;
+    font-style: italic;
+    font-size: 1.0rem;
+    border: solid 1px #cecece;
+}
+
+#nome{
+    width: 40%;
+    padding: 10px;
+    margin: 5px 0.5px 5px 5px;
+    border-radius: 10px 0px 0px 10px;
+    color: #757575;
+    background-color: #f0f0f098;
+    font-style: italic;
+    font-size: 1.0rem;
+    border: solid 1px #cecece;
+}
+
+#snome{
+    width: 40%;
+    padding: 10px;
+    margin: 5px 5px 5px 0.5px;
+    border-radius: 0px 10px 10px 0px;
+    color: #757575;
+    background-color: #f0f0f098;
+    font-style: italic;
+    font-size: 1.0rem;
+    border: solid 1px #cecece;
+}
+
+#email{
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    color: #757575;
+    background-color: #f0f0f098;
+    font-style: italic;
+    font-size: 1.0rem;
+    border: solid 1px #cecece;
+}
+
+#env{
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #5923FA;
+}
+
+#env:hover{
+    background-color: #8A2BE3;
+}
+
+#divtermos{
+    width: 80%;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 8%;
+    font-size: 0.9rem;
+}
+
+#apelido:focus, #nome:focus, #snome:focus, #email:focus{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    /* border-radius: 10px; */
+    border: solid 1px #cecece;
+    /* outline: none; */
+}
+
+/* input:focus {
+    outline: none;
+  } */
 
 
 /* Color Theme Swatches in Hex */
