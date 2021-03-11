@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+.gradient{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; 
+    height: 100vh;
+    background: linear-gradient(45deg, #F022D8, #CB23FA, #8A2BE3, #5923FA, #2228F0);
+    background-size: 500% 500%;
+    animation: cor 15s ease infinite;
+}
+
+@keyframes cor {
+    0% {
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50
+    }
+}
+
+#principal {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.76);
+}
+
+.titulo{
+    width: 500px;
+    /* align-self: flex-start;
+    flex-grow: 1; */
+}
+
+
+/* Color Theme Swatches in Hex */
+.Royal-purple-1-hex { color: #B335F7; }
+.Royal-purple-2-hex { color: #8A29BE; }
+.Royal-purple-3-hex { color: #7B25AA; }
+.Royal-purple-4-hex { color: #8527B7; }
+.Royal-purple-5-hex { color: #691F91; }
