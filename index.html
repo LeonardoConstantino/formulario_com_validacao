@@ -4,34 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Formulário</title>
 </head>
 <body class="gradient">
     <section id="principal">
-        <div class="titulo">
-            <h1>Crie sua conta</h1>
-            <p>Ja tem uma conta? <a href="#">Entre aqui</a></p>
+        <div id="titulo">
+            <h1 class="centro">Crie sua conta</h1>
+            <p class="centro">Ja tem uma conta? <a href="#">Entre aqui</a></p>
         </div>
         <form action="#">
-            <div>
-                <input type="text" name="apelido" id="apelido" value="Apelido" required>
+            <div class="centro">
+                <input type="text" name="apelido" id="apelido" placeholder="Apelido" required>
                 <label for="apelido" hidden>apelido</label>
             </div>
-            <div>
-                <input type="text" name="nome" id="nome" value="Nome" required>
+            <div class="centro">
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>
                 <label for="nome" hidden>nome</label>
-                <input type="text" name="sobrenome" id="snome" value="Sobrenome" required>
+                <input type="text" name="sobrenome" id="snome" placeholder="Sobrenome" required>
                 <label for="snome" hidden>sobrenome</label>
             </div>
-            <div>
+            <div class="centro">
+                <input type="email" name="email" id="email" placeholder="E-mail">
                 <label for="email" hidden>email</label>
-                <input type="email" name="email" id="email" value="email">
             </div>
-            <div>
-                <input type="submit" value="Criar conta">
+            <div class="centro">
+                <input type="button" value="Criar conta" id="env">
             </div>
-            <div>
+            <div id="divtermos">
                 <input type="checkbox" name="termos" id="termos" required>
                 <label for="termos">Eu li e concordo com os <a href="#">termos</a></label>
             </div>
